@@ -1,0 +1,46 @@
+{
+    "device": 2,
+
+    "segment_id_num": 3000,
+    "segment_lane_num": 10,
+    "segment_type_num": 30,
+    "segment_length_num": 220,
+
+    "segment_id_dims": 512,
+    "segment_lane_dims": 32,
+    "segment_type_dims": 32,
+    "segment_length_dims": 32,
+
+    "rpe_dist_num": 300,
+    "rpe_sim_num": 300,
+    "rpe_dims": 32,
+
+    "hidden_dims": 608,
+
+    "segment_num": 3000,
+    "locality_num": 100,
+    "region_num": 30,
+
+    "segment_features": "./data_preprocess/chengdu/preprocessed_data/road_features",
+    "segment_adj": "./data_preprocess/chengdu/preprocessed_data/road_adj_matrix",
+    "segment_trajectory_adj": "./data_preprocess/chengdu/preprocessed_data/road_trajectory_adj_matrix",
+    "segment_dist_matrix": "./data_preprocess/chengdu/preprocessed_data/dist_matrix.pkl",
+    "segment_sim_matrix": "./data_preprocess/chengdu/preprocessed_data/sim_matrix.pkl",
+    "output_dir": "./main_exp/chengdu/result",
+
+    "segment2locality_assign": "./main_exp/chengdu/result/assign/segment2locality_assign_2025-04-15_10-07-51",
+    "locality2region_assign": "./main_exp/chengdu/result/assign/locality2region_assign_2025-04-15_10-07-51",
+
+    "learning_rate": 1e-4,
+    "leaky_relu_alpha": 0.2,
+    "dropout": 0.6,
+    "head_num": 8,
+
+    "clip": 0.1,
+
+    "label_train_set": "./data_preprocess/chengdu/preprocessed_data/label_pred_train_set",
+    "label_train_set_false": "./data_preprocess/chengdu/preprocessed_data/label_pred_train_set_false",
+
+    "label_prediction_learning_rate": 1e-5,
+    "label_prediction_epochs": 500
+}

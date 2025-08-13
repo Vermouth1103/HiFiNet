@@ -1,0 +1,46 @@
+{
+    "device": 3,
+
+    "segment_id_num": 16000,
+    "segment_lane_num": 20,
+    "segment_type_num": 30,
+    "segment_length_num": 220,
+
+    "segment_id_dims": 32,
+    "segment_lane_dims": 32,
+    "segment_type_dims": 32,
+    "segment_length_dims": 32,
+
+    "rpe_dist_num": 200,
+    "rpe_sim_num": 200,
+    "rpe_dims": 32,
+
+    "hidden_dims": 128,
+
+    "segment_num": 16000,
+    "locality_num": 100,
+    "region_num": 30,
+
+    "segment_features": "./data_preprocess/beijing/preprocessed_data/road_features",
+    "segment_adj": "./data_preprocess/beijing/preprocessed_data/road_adj_matrix",
+    "segment_trajectory_adj": "./data_preprocess/beijing/preprocessed_data/road_trajectory_adj_matrix",
+    "segment_dist_matrix": "./data_preprocess/beijing/preprocessed_data/dist_matrix.pkl",
+    "segment_sim_matrix": "./data_preprocess/beijing/preprocessed_data/sim_matrix.pkl",
+    "output_dir": "./main_exp/beijing/result",
+
+    "segment2locality_assign": "./main_exp/beijing/result/assign/segment2locality_assign_2025-04-16_05-45-45",
+    "locality2region_assign": "./main_exp/beijing/result/assign/locality2region_assign_2025-04-16_05-45-45",
+
+    "learning_rate": 1e-4,
+    "leaky_relu_alpha": 0.2,
+    "dropout": 0.6,
+    "head_num": 8,
+
+    "clip": 0.1,
+
+    "label_train_set": "./data_preprocess/beijing/preprocessed_data/label_pred_train_set",
+    "label_train_set_false": "./data_preprocess/beijing/preprocessed_data/label_pred_train_set_false",
+
+    "label_prediction_learning_rate": 1e-5,
+    "label_prediction_epochs": 500
+}

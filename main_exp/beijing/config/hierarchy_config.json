@@ -1,0 +1,48 @@
+{
+    "device": 2,
+
+    "segment_id_num": 16000,
+    "segment_lane_num": 20,
+    "segment_type_num": 30,
+    "segment_length_num": 220,
+
+    "segment_id_dims": 256,
+    "segment_lane_dims": 32,
+    "segment_type_dims": 32,
+    "segment_length_dims": 32,
+
+    "rpe_dist_num": 200,
+    "rpe_sim_num": 200,
+    "rpe_dims": 32,
+
+    "hidden_dims": 354,
+
+    "segment_num": 16000,
+    "locality_num": 100,
+    "region_num": 30,
+
+    "segment_features": "./data_preprocess/beijing/preprocessed_data/road_features",
+    "segment_adj": "./data_preprocess/beijing/preprocessed_data/road_adj_matrix",
+    "segment_trajectory_adj": "./data_preprocess/beijing/preprocessed_data/road_trajectory_adj_matrix",
+    "segment_dist_matrix": "./data_preprocess/beijing/preprocessed_data/dist_matrix.pkl",
+    "segment_sim_matrix": "./data_preprocess/beijing/preprocessed_data/sim_matrix.pkl",
+    "output_dir": "./main_exp/beijing/result",
+
+    "segment2locality_spectral_labels": "./data_preprocess/beijing/preprocessed_data/segment2locality_spectral_labels",
+    "locality2region_spectral_labels": "./data_preprocess/beijing/preprocessed_data/locality2region_spectral_labels",
+
+    "learning_rate": 1e-4,
+    "epochs": 200,
+    "leaky_relu_alpha": 0.2,
+    "dropout": 0.6,
+    "head_num": 2,
+
+    "loss_feature_ratio": 1.0,
+    "loss_assignment_ratio": 1.0,
+    "loss_reconstruction_ratio": 1.0,
+    "loss_high_freq_ratio": 1.0,
+    "loss_balance_ratio": 1.0,
+    "loss_trajectory_ratio": 1.0,
+
+    "clip": 0.1
+}

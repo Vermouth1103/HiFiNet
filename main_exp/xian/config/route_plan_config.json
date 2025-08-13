@@ -1,0 +1,48 @@
+{
+    "device": 3,
+
+    "segment_id_num": 3686,
+    "segment_lane_num": 10,
+    "segment_type_num": 30,
+    "segment_length_num": 200,
+
+    "segment_id_dims": 512,
+    "segment_lane_dims": 32,
+    "segment_type_dims": 32,
+    "segment_length_dims": 32,
+
+    "rpe_dist_num": 200,
+    "rpe_sim_num": 200,
+    "rpe_dims": 32,
+
+    "hidden_dims": 608,
+
+    "segment_num": 3686,
+    "locality_num": 100,
+    "region_num": 30,
+
+    "segment_features": "./data_preprocess/xian/preprocessed_data/road_features",
+    "segment_adj": "./data_preprocess/xian/preprocessed_data/road_adj_matrix",
+    "segment_trajectory_adj": "./data_preprocess/xian/preprocessed_data/road_trajectory_adj_matrix",
+    "segment_dist_matrix": "./data_preprocess/xian/preprocessed_data/dist_matrix.pkl",
+    "segment_sim_matrix": "./data_preprocess/xian/preprocessed_data/sim_matrix.pkl",
+    "output_dir": "./main_exp/xian/result",
+
+    "segment2locality_assign": "./main_exp/xian/result/assign/segment2locality_assign_2025-04-15_03-14-43",
+    "locality2region_assign": "./main_exp/xian/result/assign/locality2region_assign_2025-04-15_03-14-43",
+
+    "batch_size": 300,
+    
+    "num_layers": 1,
+    "batch_first": true,
+    "bidirectional": false,
+    "dropout": 0.6,
+    "head_num": 8,
+
+    "clip": 0.1,
+
+    "train_route_set": "./data_preprocess/xian/preprocessed_data/route_train_set",
+    "test_route_set": "./data_preprocess/xian/preprocessed_data/route_test_set",
+    "route_plan_learning_rate": 5e-4,
+    "route_plan_epochs": 100
+}
