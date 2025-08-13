@@ -28,8 +28,8 @@
     "segment_sim_matrix": "./data_preprocess/chengdu/preprocessed_data/sim_matrix.pkl",
     "output_dir": "./main_exp/chengdu/result",
 
-    "segment2locality_assign": "./main_exp/chengdu/result/assign/segment2locality_assign_2025-04-15_10-07-51",
-    "locality2region_assign": "./main_exp/chengdu/result/assign/locality2region_assign_2025-04-15_10-07-51",
+    "segment2locality_assign": "./main_exp/chengdu/result/assign/segment2locality_assign",
+    "locality2region_assign": "./main_exp/chengdu/result/assign/locality2region_assign",
     
     "num_layers": 1,
     "batch_first": true,

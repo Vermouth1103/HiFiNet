@@ -28,8 +28,8 @@
     "segment_sim_matrix": "./data_preprocess/xian/preprocessed_data/sim_matrix.pkl",
     "output_dir": "./main_exp/xian/result",
 
-    "segment2locality_assign": "./main_exp/xian/result/assign/segment2locality_assign_2025-04-09_18-56-25",
-    "locality2region_assign": "./main_exp/xian/result/assign/locality2region_assign_2025-04-09_18-56-25",
+    "segment2locality_assign": "./main_exp/xian/result/assign/segment2locality_assign",
+    "locality2region_assign": "./main_exp/xian/result/assign/locality2region_assign",
 
 
     "learning_rate": 1e-4,

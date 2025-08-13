@@ -28,8 +28,8 @@
     "segment_sim_matrix": "./data_preprocess/beijing/preprocessed_data/sim_matrix.pkl",
     "output_dir": "./main_exp/beijing/result",
 
-    "segment2locality_assign": "./main_exp/beijing/result/assign/segment2locality_assign_2025-04-16_05-45-45",
-    "locality2region_assign": "./main_exp/beijing/result/assign/locality2region_assign_2025-04-16_05-45-45",
+    "segment2locality_assign": "./main_exp/beijing/result/assign/segment2locality_assign",
+    "locality2region_assign": "./main_exp/beijing/result/assign/locality2region_assign",
 
     "learning_rate": 1e-4,
     "leaky_relu_alpha": 0.2,
